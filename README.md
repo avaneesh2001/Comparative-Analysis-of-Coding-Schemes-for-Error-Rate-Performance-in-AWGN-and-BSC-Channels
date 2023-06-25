@@ -49,15 +49,29 @@ The project's settings include the parameters for each coding scheme and the sim
    </p>
 
    - Performance over BSC Channel: Hamming codes also perform well over the BSC channel, effectively correcting single bit errors. As the probability of bit flip in the BSC channel increases, the BER rises. However, due to the design of Hamming codes, they can also detect and correct burst errors to some extent, making them suitable for scenarios with occasional bursty noise.
-   ![Hamming Codes - BSC](https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/Hamming_BSC.png)
+   <p align="center">
+   <img src="https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/Hamming_BSC.png" alt="Hamming Codes-BSC" width="500">
+   </p>
 
 2. BCH Codes:
    - Performance over AWGN Channel: The (15, 5) BCH code demonstrates superior error correction capabilities over the AWGN channel. It outperforms Hamming codes in terms of BER, especially at moderate to high SNR values. The BER decreases rapidly with increasing SNR, indicating robust error correction.
+   <p align="center">
+   <img src="https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/bch_awgn.png" alt="BCH Code -AWGN" width="500">
+   </p>
    - Performance over BSC Channel: BCH codes are less effective in handling burst errors in the BSC channel compared to Hamming codes. However, they still exhibit good error correction capabilities for single bit errors. As the probability of bit flip in the BSC channel increases, the BER gradually rises but remains relatively low compared to uncoded transmission.
+   <p align="center">
+   <img src="https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/bch_bsc.png" alt="BCH Code - BSC" width="500">
+   </p>
 
 3. Convolutional Codes:
    - Performance over AWGN Channel: The (3, 1, 4) convolutional code performs well over the AWGN channel, providing reliable error correction capabilities. The BER decreases as the SNR increases, indicating successful transmission. However, the BER for convolutional codes is slightly higher compared to Hamming and BCH codes at the same SNR values.
+   <p align="center">
+   <img src="https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/conv_AWGN.png" alt="Convolutional code -AWGN" width="500">
+   </p>
    - Performance over BSC Channel: Convolutional codes exhibit robust error correction capabilities over the BSC channel, similar to their performance in the AWGN channel. As the probability of bit flip increases, the BER gradually rises but remains relatively low compared to uncoded transmission. Convolutional codes are known for their ability to handle burst errors effectively.
+   <p align="center">
+   <img src="https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/conv_BSC.png" alt="Convolutional code - BSC" width="500">
+   </p>>
 
 Overall, the simulation results indicate that Hamming codes, BCH codes, and convolutional codes are all viable coding schemes for different communication scenarios. The choice of the coding scheme depends on the specific requirements of the system, such as the type of noise present, the desired error correction capabilities, and the complexity constraints. The results provide valuable insights into the performance trade-offs of each coding scheme, enabling system designers to make informed decisions based on their specific needs.
 
@@ -68,6 +82,12 @@ Based on the simulation results, the performance comparison of the three coding 
 1. Hamming Codes: The (15, 11) Hamming code demonstrates relatively good performance over both the AWGN and BSC channels. It provides significant error correction capabilities, especially for burst errors common in the BSC channel. However, it exhibits a higher complexity compared to other coding schemes.
 2. BCH Codes: The (15, 5) BCH code offers excellent error correction performance, particularly in the AWGN channel. It can correct multiple errors and has lower complexity compared to Hamming codes. However, it is less effective in handling burst errors in the BSC channel.
 3. Convolutional Codes: The (3, 1, 4) convolutional code performs well in both the AWGN and BSC channels. It provides good error correction capabilities with a relatively lower complexity compared to linear block codes. However, its performance is slightly lower than that of Hamming and BCH codes.
+<p align="center">
+   <img src="https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/comparision_awgn.png" alt="Comparision AWGN" width="500">
+   </p>
+<p align="center">
+   <img src="https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/comparision_bsc.png" alt="Comparision BSC" width="500">
+   </p>
 
 In conclusion, the choice of coding scheme depends on the specific requirements and characteristics of the communication system. Hamming codes and BCH codes are suitable for applications where burst error correction is crucial, while convolutional codes offer a good balance between performance and complexity. Further research and experimentation can be conducted to explore other coding schemes and optimize their parameters for specific scenarios.
 
