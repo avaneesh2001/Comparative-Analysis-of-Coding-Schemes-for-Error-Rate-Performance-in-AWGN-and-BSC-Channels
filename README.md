@@ -44,7 +44,10 @@ The project's settings include the parameters for each coding scheme and the sim
 
 1. Hamming Codes:
    - Performance over AWGN Channel: The (15, 11) Hamming code demonstrates excellent error correction capabilities in the presence of AWGN. As the signal-to-noise ratio (SNR) increases, the Bit Error Rate (BER) decreases significantly. At high SNR values, the BER approaches zero, indicating reliable transmission with minimal errors.
+   <p align="center">
    <img src="https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/Hamming_AWGN.png" alt="Hamming Codes-AWGN" width="500">
+   </p>
+
    - Performance over BSC Channel: Hamming codes also perform well over the BSC channel, effectively correcting single bit errors. As the probability of bit flip in the BSC channel increases, the BER rises. However, due to the design of Hamming codes, they can also detect and correct burst errors to some extent, making them suitable for scenarios with occasional bursty noise.
    ![Hamming Codes - BSC](https://github.com/avaneesh2001/Comparative-Analysis-of-Coding-Schemes-for-Error-Rate-Performance-in-AWGN-and-BSC-Channels/blob/main/images/Hamming_BSC.png)
 
